@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>walle服务包 · GitBook</title>
+        <title>ResultModal结果弹窗 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="msg.html" />
     
-    <link rel="prev" href="../" />
+    
+    <link rel="prev" href="addressModal.html" />
     
 
     </head>
@@ -100,7 +102,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="Introduction.html">
+        <li class="chapter " data-level="1.2" data-path="Introduction.html">
             
                 <a href="Introduction.html">
             
@@ -141,7 +143,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.2" data-path="resultModal.html">
+        <li class="chapter active" data-level="1.2.1.2" data-path="resultModal.html">
             
                 <a href="resultModal.html">
             
@@ -304,7 +306,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >walle服务包</a>
+        <a href=".." >ResultModal结果弹窗</a>
     </h1>
 </div>
 
@@ -319,70 +321,83 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="walle">Walle</h2>
-<p>walle&#x74E6;&#x529B;&#xFF0C;&#x662F;&#x62BD;&#x5956;&#x6E38;&#x620F;&#x6A21;&#x5757;&#x5316;&#x7684;&#x5927;&#x7BA1;&#x5BB6;&#xFF0C;&#x5B83;&#x59CB;&#x4E8E;&#x62BD;&#x5956;&#x4F46;&#x4E0D;&#x6B62;&#x4E8E;&#x62BD;&#x5956;&#xFF0C;&#x53EF;&#x5E94;&#x7528;&#x5230;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x3002;</p>
+                                <h2 id="resultmodal">ResultModal</h2>
+<p>&#x627F;&#x63A5;&#x62BD;&#x5956;&#x7ED3;&#x679C;&#x5F39;&#x7A97;&#xFF0C;&#x5173;&#x4E8E;&#x62BD;&#x5956;&#x6A21;&#x5757;&#x7684;&#x4E2D;&#x5956;&#x3001;&#x672A;&#x4E2D;&#x5956;&#x7ED3;&#x679C;&#x90FD;&#x7531;&#x7ED3;&#x679C;&#x9875;&#x5448;&#x73B0;</p>
 <blockquote>
-<p>&#x6240;&#x6709;&#x901A;&#x7528;&#x6A21;&#x5757;&#x6837;&#x5F0F;&#x53EF;&#x4EE5;&#x9AD8;&#x5EA6;&#x5B9A;&#x5236; &#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x53C2;&#x8003;<a href="style.html">style</a></p>
+<p>extend &#x5E95;&#x5C42;&#x6A21;&#x5757;Modal&#xFF0C;</p>
 </blockquote>
-<h3 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h3>
-<pre><code class="lang-sh">npm i @byhealth/walle -S
-</code></pre>
-<h3 id="&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</h3>
-<p><img src="../assets/Walle.png" alt="Walle"></p>
-<h3 id="&#x6E38;&#x620F;&#x6A21;&#x5757;">&#x6E38;&#x620F;&#x6A21;&#x5757;</h3>
-<p><a href="dist">demo</a></p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> {AddressModal, ResultModal, NoticeModal, Msg } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@byhealth/walle&apos;</span>;
-</code></pre>
+<h4 id="parame">parame</h4>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
+<th>&#x7C7B;&#x578B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>style</td>
+<td>&#x5F39;&#x7A97;&#x6837;&#x5F0F;</td>
+<td>&#x5426;</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>modalTitle</td>
+<td>&#x5F39;&#x7A97;&#x6807;&#x9898;&#xFF0C;(ex&#xFF1A;&#x606D;&#x559C;&#x60A8;)&#xFF0C;&#x4E0D;&#x586B;&#x9690;&#x85CF;</td>
+<td>&#x5426;</td>
+<td></td>
+</tr>
+<tr>
+<td>onCancel</td>
+<td>&#x5173;&#x95ED;&#x5F39;&#x7A97;&#x65F6;&#x8C03;&#x7528;</td>
+<td>&#x5426;</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>onEnsure</td>
+<td>onEnsure = (result) =&gt; console.log(&apos;&#x786E;&#x5B9A;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x53C2;&#x6570;&apos;, result),</td>
+<td>&#x5426;</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>submitText</td>
+<td>&#x6309;&#x94AE;&#x6587;&#x5B57;</td>
+<td>&#x5426;</td>
+<td>String</td>
+</tr>
+<tr>
+<td>outerFrameId</td>
+<td>&#x5F39;&#x7A97;&#x6240;&#x5C5E;&#x7236;&#x7EA7;ID</td>
+<td>&#x5426;</td>
+<td>String</td>
+</tr>
+<tr>
+<td>submitAddressText</td>
+<td>&#x4E2D;&#x5956;&#x5B9E;&#x7269;&#x5956;&#x54C1;&#x9700;&#x586B;&#x5199;&#x5730;&#x5740;&#x65F6;&#x6309;&#x94AE;&#x6587;&#x5B57;&#xFF08;&#x9ED8;&#x8BA4;&quot;&#x586B;&#x5199;&#x5730;&#x5740;&quot;&#xFF09;</td>
+<td>&#x5426;</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+<h4 id="options">Options</h4>
 <ul>
-<li><h4 id="&#x586B;&#x5199;&#x6536;&#x8D27;&#x4EBA;&#x5730;&#x5740;&#x5F39;&#x7A97;-addressmodal">&#x586B;&#x5199;&#x6536;&#x8D27;&#x4EBA;&#x5730;&#x5740;&#x5F39;&#x7A97; <a href="AddressModal">AddressModal</a></h4>
-</li>
-<li><h4 id="&#x62BD;&#x5956;&#x7ED3;&#x679C;&#x5F39;&#x7A97;-resultmodal">&#x62BD;&#x5956;&#x7ED3;&#x679C;&#x5F39;&#x7A97; <a href="ResultModal">ResultModal</a></h4>
-</li>
-<li><h4 id="&#x6D88;&#x606F;&#x5F39;&#x7A97;-noticemodal">&#x6D88;&#x606F;&#x5F39;&#x7A97; <a href="NoticeModal">NoticeModal</a></h4>
-<h4 id="">...</h4>
-</li>
-</ul>
-<h3 id="&#x5E95;&#x5C42;&#x6A21;&#x5757;">&#x5E95;&#x5C42;&#x6A21;&#x5757;</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> {Loading, Modal, Message, AddressPicker} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@byhealth/walle&apos;</span>;
-</code></pre>
-<ul>
-<li><h4 id="&#x9875;&#x9762;&#x52A0;&#x8F7D;-loading">&#x9875;&#x9762;&#x52A0;&#x8F7D; <a href="http://www.eightfeet.cn/Loading/" target="_blank">Loading</a></h4>
-</li>
-<li><h4 id="&#x9875;&#x9762;&#x5F39;&#x7A97;-modal">&#x9875;&#x9762;&#x5F39;&#x7A97; <a href="http://www.eightfeet.cn/Modal/" target="_blank">Modal</a></h4>
-</li>
-<li><h4 id="&#x5F31;&#x63D0;&#x793A;-message">&#x5F31;&#x63D0;&#x793A; <a href="http://www.eightfeet.cn/Message/" target="_blank">Message</a></h4>
-</li>
-<li><h4 id="&#x5730;&#x5740;&#x9009;&#x62E9;-addresspicker">&#x5730;&#x5740;&#x9009;&#x62E9; <a href="http://www.eightfeet.cn/AddressPicker/" target="_blank">AddressPicker</a></h4>
-</li>
-</ul>
-<p>&#x5DE5;&#x5177;&#x5305;</p>
-<h3 id="&#x5DE5;&#x5177;&#x5305;">&#x5DE5;&#x5177;&#x5305;</h3>
-<pre><code class="lang-javascript">{
-    validate: {...}
-    htmlFactory: {
-        createDom, 
-        removeDom,
-        combineDomByClass,
-        inlineStyle
-    },
-    tools: {
-        isPC,
-        isObject,
-        countDown,
-        dormancyFor,
-        fixpx,
-        setEmBase
-    },
-    regionsDataFormat: {
-        formatWheelsData,
-        getPositionByDefaultValue
-    },
-    webAnimation: {
-        onceTransitionEnd,
-        onceAnimationEnd
-    }
+<li><h5 id="showmodal--prize">showModal: &#x192; (prize)</h5>
+<p>&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5F39;&#x7A97;</p>
+<pre><code class="lang-javascript">prize = {
+      prizeName: <span class="hljs-string">&apos;&#x86CB;&#x767D;&#x7C89;&apos;</span>, 
+      prizeAlias: <span class="hljs-string">&apos;&#x522B;&#x540D;&apos;</span>, 
+      awardMsg: <span class="hljs-string">&apos;&#x83B7;&#x5956;&#x611F;&#x8A00;&apos;</span>, 
+      prizeImg: <span class="hljs-string">&apos;&#x5956;&#x54C1;&#x56FE;&#x7247;&apos;</span>, 
+      memo: <span class="hljs-string">&apos;&#x5956;&#x54C1;&#x5907;&#x6CE8;&apos;</span>
 }
 </code></pre>
+</li>
+<li><h5 id="hidemodal">hideModal()</h5>
+<p>&#x9690;&#x85CF;&#x7ED3;&#x679C;&#x5F39;&#x7A97;</p>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -410,10 +425,14 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                <a href="addressModal.html" class="navigation navigation-prev " aria-label="Previous page: AddressModal填写地址弹窗">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="msg.html" class="navigation navigation-next " aria-label="Next page: Msg提示信息">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -422,7 +441,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"walle服务包","level":"1.2","depth":1,"next":{"title":"游戏模块","level":"1.2.1","depth":2,"ref":"","articles":[{"title":"AddressModal填写地址弹窗","level":"1.2.1.1","depth":3,"path":"walle/addressModal.md","ref":"walle/addressModal.md","articles":[]},{"title":"ResultModal结果弹窗","level":"1.2.1.2","depth":3,"path":"walle/resultModal.md","ref":"walle/resultModal.md","articles":[]},{"title":"Msg提示信息","level":"1.2.1.3","depth":3,"path":"walle/msg.md","ref":"walle/msg.md","articles":[]},{"title":"NoticeModal消息弹窗","level":"1.2.1.4","depth":3,"path":"walle/noticeModal.md","ref":"walle/noticeModal.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"walle/Introduction.md","mtime":"2019-10-15T08:14:21.310Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-17T06:05:00.932Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ResultModal结果弹窗","level":"1.2.1.2","depth":3,"next":{"title":"Msg提示信息","level":"1.2.1.3","depth":3,"path":"walle/msg.md","ref":"walle/msg.md","articles":[]},"previous":{"title":"AddressModal填写地址弹窗","level":"1.2.1.1","depth":3,"path":"walle/addressModal.md","ref":"walle/addressModal.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"walle/resultModal.md","mtime":"2019-10-17T04:16:13.316Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-17T06:05:00.932Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
