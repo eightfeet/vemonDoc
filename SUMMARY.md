@@ -15,7 +15,6 @@
                 * [Modal-模态框](http://www.eightfeet.cn/Modal/)
                 * [Message-弱提示](http://www.eightfeet.cn/Message/)
                 * [AddressPicker-地址选择](http://www.eightfeet.cn/AddressPicker/)
-            * [工具包](walle/helper.md)
         * [GameStyle-游戏皮肤定义](walle/gamestyle.md)
             * [ModulesStyle-功能模块皮肤定义](walle/modulesstyle.md)
 

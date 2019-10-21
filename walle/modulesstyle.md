@@ -2,9 +2,9 @@
 
 
 
-| 底层模块UI订制                                               | 游戏模块UI订制包含以下属性                                   |
+| 完整游戏包含样式结构                                         | 底层模块样式结构                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [AddressPicker 地址选择](<#g>)<br />[Message 弱提醒](<#h>)<br />[Loading 加载](<#i>)<br />[Modal 弹窗](<#j>) | [Game 游戏皮肤](<#a>)<br /> [FailedModal 失败弹窗皮肤](<#b>) <br />[SuccessModal 成功弹窗皮肤](<#b>)<br /> [NoticeModal 消息提醒弹窗皮肤](<#c>)<br /> [AddressModal 地址选择弹窗皮肤](<#d>) <br />[Message 弱提示皮肤](<#e>) <br />[Loading 加载皮肤](<#f>) |
+| [Game 游戏皮肤](./gamestyle.md)<br /> [FailedModal 失败弹窗皮肤](<#b>) <br />[SuccessModal 成功弹窗皮肤](<#b>)<br /> [NoticeModal 消息提醒弹窗皮肤](<#c>)<br /> [AddressModal 地址选择弹窗皮肤](<#d>) <br />[Message 弱提示皮肤](<#e>) <br />[Loading 加载皮肤](<#i>) | [AddressPicker 地址选择](<#g>)<br />[Message 弱提醒](<#h>)<br />[Loading 加载](<#i>)<br />[Modal 弹窗](<#j>) |
 
 
 
@@ -264,27 +264,5 @@
 
 
 
-- #### <span id="f">Loading</span>
 
-
-```javascript
-"LoadingTheme": {
-    "overlay": {
-        遮罩层
-    },
-	"content": {
-		内容区域
-	},
-	"vertices": {
-        节点定义
-        
-		// size可以设置Loading的大小
-		"size": "30%", 
-            
-		// elements用来定义是节点数目与颜色，elements为数字时定义节点数目
-        // elements为数组时，数组的长度定义节点的数目，数组子项为颜色属性时代表每个节点的颜色，用来定制彩色Loading
-		"elements": ["red", "green", "blue", "yellow", "orange"] //
-	}
-}
-```
 

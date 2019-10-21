@@ -297,19 +297,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2.2.3" data-path="helper.md">
-            
-                <span>
-            
-                    
-                    工具包
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -406,14 +393,14 @@
 <table>
 <thead>
 <tr>
-<th>&#x5E95;&#x5C42;&#x6A21;&#x5757;UI&#x8BA2;&#x5236;</th>
-<th>&#x6E38;&#x620F;&#x6A21;&#x5757;UI&#x8BA2;&#x5236;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;</th>
+<th>&#x5B8C;&#x6574;&#x6E38;&#x620F;&#x5305;&#x542B;&#x6837;&#x5F0F;&#x7ED3;&#x6784;</th>
+<th>&#x5E95;&#x5C42;&#x6A21;&#x5757;&#x6837;&#x5F0F;&#x7ED3;&#x6784;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="gamestyle.html">Game &#x6E38;&#x620F;&#x76AE;&#x80A4;</a><br> <a href="#b">FailedModal &#x5931;&#x8D25;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a> <br><a href="#b">SuccessModal &#x6210;&#x529F;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a><br> <a href="#c">NoticeModal &#x6D88;&#x606F;&#x63D0;&#x9192;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a><br> <a href="#d">AddressModal &#x5730;&#x5740;&#x9009;&#x62E9;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a> <br><a href="#e">Message &#x5F31;&#x63D0;&#x793A;&#x76AE;&#x80A4;</a> <br><a href="#i">Loading &#x52A0;&#x8F7D;&#x76AE;&#x80A4;</a></td>
 <td><a href="#g">AddressPicker &#x5730;&#x5740;&#x9009;&#x62E9;</a><br><a href="#h">Message &#x5F31;&#x63D0;&#x9192;</a><br><a href="#i">Loading &#x52A0;&#x8F7D;</a><br><a href="#j">Modal &#x5F39;&#x7A97;</a></td>
-<td><a href="#a">Game &#x6E38;&#x620F;&#x76AE;&#x80A4;</a><br> <a href="#b">FailedModal &#x5931;&#x8D25;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a> <br><a href="#b">SuccessModal &#x6210;&#x529F;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a><br> <a href="#c">NoticeModal &#x6D88;&#x606F;&#x63D0;&#x9192;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a><br> <a href="#d">AddressModal &#x5730;&#x5740;&#x9009;&#x62E9;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a> <br><a href="#e">Message &#x5F31;&#x63D0;&#x793A;&#x76AE;&#x80A4;</a> <br><a href="#f">Loading &#x52A0;&#x8F7D;&#x76AE;&#x80A4;</a></td>
 </tr>
 </tbody>
 </table>
@@ -647,29 +634,6 @@
     }
 },
 </code></pre>
-<ul>
-<li><h4 id="loading"><span id="f">Loading</span></h4>
-</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;LoadingTheme&quot;</span>: {
-    <span class="hljs-string">&quot;overlay&quot;</span>: {
-        &#x906E;&#x7F69;&#x5C42;
-    },
-    <span class="hljs-string">&quot;content&quot;</span>: {
-        &#x5185;&#x5BB9;&#x533A;&#x57DF;
-    },
-    <span class="hljs-string">&quot;vertices&quot;</span>: {
-        &#x8282;&#x70B9;&#x5B9A;&#x4E49;
-
-        <span class="hljs-comment">// size&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;Loading&#x7684;&#x5927;&#x5C0F;</span>
-        <span class="hljs-string">&quot;size&quot;</span>: <span class="hljs-string">&quot;30%&quot;</span>, 
-
-        <span class="hljs-comment">// elements&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x662F;&#x8282;&#x70B9;&#x6570;&#x76EE;&#x4E0E;&#x989C;&#x8272;&#xFF0C;elements&#x4E3A;&#x6570;&#x5B57;&#x65F6;&#x5B9A;&#x4E49;&#x8282;&#x70B9;&#x6570;&#x76EE;</span>
-        <span class="hljs-comment">// elements&#x4E3A;&#x6570;&#x7EC4;&#x65F6;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x5B9A;&#x4E49;&#x8282;&#x70B9;&#x7684;&#x6570;&#x76EE;&#xFF0C;&#x6570;&#x7EC4;&#x5B50;&#x9879;&#x4E3A;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x65F6;&#x4EE3;&#x8868;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x7528;&#x6765;&#x5B9A;&#x5236;&#x5F69;&#x8272;Loading</span>
-        <span class="hljs-string">&quot;elements&quot;</span>: [<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;green&quot;</span>, <span class="hljs-string">&quot;blue&quot;</span>, <span class="hljs-string">&quot;yellow&quot;</span>, <span class="hljs-string">&quot;orange&quot;</span>] <span class="hljs-comment">//</span>
-    }
-}
-</code></pre>
 
                                 
                                 </section>
@@ -709,7 +673,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ModulesStyle-功能模块皮肤定义","level":"1.1.2.3.1","depth":4,"previous":{"title":"GameStyle-游戏皮肤定义","level":"1.1.2.3","depth":3,"path":"walle/gamestyle.md","ref":"walle/gamestyle.md","articles":[{"title":"ModulesStyle-功能模块皮肤定义","level":"1.1.2.3.1","depth":4,"path":"walle/modulesstyle.md","ref":"walle/modulesstyle.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"walle/modulesstyle.md","mtime":"2019-10-21T06:55:17.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-21T08:20:36.663Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ModulesStyle-功能模块皮肤定义","level":"1.1.2.3.1","depth":4,"previous":{"title":"GameStyle-游戏皮肤定义","level":"1.1.2.3","depth":3,"path":"walle/gamestyle.md","ref":"walle/gamestyle.md","articles":[{"title":"ModulesStyle-功能模块皮肤定义","level":"1.1.2.3.1","depth":4,"path":"walle/modulesstyle.md","ref":"walle/modulesstyle.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"walle/modulesstyle.md","mtime":"2019-10-21T08:33:49.087Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-21T08:34:33.023Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
