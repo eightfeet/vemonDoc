@@ -9,7 +9,7 @@
 | ------------ | --------------------- | ------------------------------------------------------------ | -------- | ------------------------------------ |
 | 重要参数     | parentId              | Game挂载Id<br />游戏将要寄生的Node Id                        | 是       | String                               |
 |              | targetId              | Game自身Id<br />默认game-target-时间戳+100以内随机数         | 否       | String                               |
-|              | style                 | Game皮肤定义<br />定义游戏模块的UI展示效果                   | 是       | Object                               |
+|              | style                 | [Game皮肤定义<br />定义游戏模块的UI展示效果](./../walle/gamestyle.md) | 是       | Object                               |
 |              | prizes                | 奖品参数<br />参考[prizes结构](#prizes)                      | 是       | Array                                |
 |              | start                 | 开始抽奖，向后台请求抽奖结果然后以promise的形式将结果返回给Game以启动抽奖。<br />注意<br />1、务必返回Promise对象<br />2、中奖奖品数据结构必须等于prizes的某个子项 | 是       | Function<br />```()=>Promise(...)``` |
 |              | saveAddress           | 提交收货地址时保存收货人地址方法<br />当所中奖品的属性receiveType=2(填写地址)时将会弹出地址填写框，完成地址填写提交后调用此方法用于保存收货人地址，参数address是收集的地址信息<br />saveAddress = function(address){<br /><br />    console.log(data)<br />} | 是       | Function<br />```()=>Promise(...)``` |

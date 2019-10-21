@@ -1,290 +1,231 @@
-# 可定义样式
+# 游戏皮肤GameTheme
 
-
-
-| 底层模块UI订制                                               | 游戏模块UI订制包含以下属性                                   |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [AddressPicker 地址选择](<#g>)<br />[Message 弱提醒](<#h>)<br />[Loading 加载](<#i>)<br />[Modal 弹窗](<#j>) | [Game 游戏皮肤](<#a>)<br /> [FailedModal 失败弹窗皮肤](<#b>) <br />[SuccessModal 成功弹窗皮肤](<#b>)<br /> [NoticeModal 消息提醒弹窗皮肤](<#c>)<br /> [AddressModal 地址选择弹窗皮肤](<#d>) <br />[Message 弱提示皮肤](<#e>) <br />[Loading 加载皮肤](<#f>) |
-
-
-
-- #### <span id="g">AddressPicker</span>
-
+配置一个完整的抽奖活动皮肤包含**游戏皮肤**与**[模块皮肤](./modulesstyle.md)**两块，其结构如下：
 
 ```javascript
-"style": {
-    "confirmBtn": {
-        确定按钮
-    },
-	"cancelBtn": {
-        取消按钮
-    },
-	"overlay": {
-		遮罩层
-	},
-	"popularCities": {
-		热门城市
-	},
-	"popularCitiesTitle": {
-        热门城市标题
-	},
-	"popularCitiesItem": {
-        热门城市项
-	}
+Theme = {
+    // GameTheme 游戏皮肤
+  "GameTheme": {},
+	// 模块皮肤
+  "FailedModalTheme": {},
+  "SuccessModalTheme": {},
+  "AddressModalTheme": {},
+  "MessageTheme": {},
+  "LoadingTheme": {}
+
 }
 ```
 
-
-
-- #### <span id="h">Message</span>
-
-
-```javascript
-"style": {
-    "wrap": {
-        包裹层
-    },
-    "main": {
-        内容层
-    }
-},
-```
+> 所有概率抽奖游戏的模块皮肤结构是一致的，但游戏形式不一样导致游戏皮肤结构会有所不同
 
 
 
-- #### <span id="i">Loading</span>
+### 游戏皮肤结构
 
+​	[大转盘抽奖](#a) 
 
-```javascript
-"style": {
-    "overlay": {
-        遮罩层
-    },
-	"content": {
-		内容区域
-	},
-	"vertices": {
-        节点定义
-        
-		// size可以设置Loading的大小
-		"size": "30%", 
-            
-		// elements用来定义是节点数目与颜色，elements为数字时定义节点数目
-        // elements为数组时，数组的长度定义节点的数目，数组子项为颜色属性时代表每个节点的颜色，用来定制彩色Loading
-		"elements": ["red", "green", "blue", "yellow", "orange"] //
-	}
-}
-```
+​	[九宫格抽奖](#b) 
+
+​	[翻牌抽奖](#c) 
+
+​	[红包抽奖](#d) 
+
+​	[掷色子抽奖](#e)
+
+​	[老虎机](#f)
 
 
 
-- #### <span id="j">Modal</span>
+- ##### <span id="a">大转盘抽奖</span>
 
+  ```javascript
+  GameTheme = {
+      // 外框
+  	"wrap": {"zIndex": 10 }, 
+      // 游戏图片
+      "gameImg": {},
+      // 奖品别名
+      "prizeAlias": {},
+      // 指针
+      "needle": {},
+      // 抽奖按钮
+      "lotteryButton": {},
+      // 转盘
+      "wheel": {},
+      // 转盘分割线
+      "divide": {},
+      // 修饰层
+      "modify": [{"top": "-2.56em"},{...}]
+  }
+  ```
 
-```javascript
-"style": {
-	"overlay": {遮罩层}, 
-	"content": {内容区域}, 
-	"close": {关闭按钮}, 
-	"header": {头部}, 
-	"article": {文本内容}, 
-	"footer": {脚部},
-    "modify": [{
-		修饰层 
-    }]
-}
-```
+  
 
+- ##### <span id="b">九宫格抽奖</span>
 
+  ```javascript
+  GameTheme = {
+  	// 外框
+  	"wrap": {},
+      // 游戏图片
+      "gameImg": {},
+      // 奖品图片
+      "prize": {},
+      // 激活或者被选中
+      "activated": {},
+      // 奖品别名
+      "prizeAlias": {},
+      // 指针
+      "needle": {},
+      // 抽奖按钮
+      "lotteryButton": {},
+      // 修饰层
+      "modify": []
+  }
+  ```
 
+  
 
+- ##### <span id="c">翻牌抽奖</span>
 
-- #### <span id="b">FailedModal、SuccessModal</span>
-
-
-```javascript
-"FailedModalTheme": {
-      "overlay": {
-        遮罩层
-      },
-      "modalTitle": {
-        标题
-      },
-      "content": {
-        内容
-      },
-      "contentTop": {
-        内容顶部
-      },
-      "contentBottom": {
-        内容底部
-      },
-      "close": {
-        关闭按钮
-      },
-      "submit": {
-        提交按钮
-      },
-      "article": {
-        文本内容
-      },
-      "prizeAlias": {
-		奖品别名	
-      },
-      "prizeName": {
-        奖品名称
-      },
-      "prizeImg": {
-        奖品图片
-      },
-      "memo": {
-        奖品备注
-      },
-      "modify": [{
-		修饰层 
-      }]
-    },
-```
-
-
-
-- #### <span id="c">NoticeModal</span>
-
-
-```javascript
-"NoticeModalTheme": {
-      "overlay": {
-        遮罩层
-      },
-      "content": {
-        内容
-      },
-      "contentTop": {
-        内容顶部
-      },
-      "contentBottom": {
-        内容底部
-      },
-      "close": {
-        关闭按钮
-      },
-      "submit": {
-        提交按钮
-      },
-      "article": {
-        文本内容
-      },
-      "modalTitle": {
-        模块标题
-      },
-      "modify": [{
-		修饰层 
-      }]
-    }
-```
+  ```javascript
+  GameTheme = {
+      // 外框
+      "wrap": {},
+      // 卡牌外框
+      "cardWrap": {},
+      // 卡牌内容
+      "cardInside": {},
+      // 卡牌封面
+      "cardCover": {},
+      // 卡牌内容被选中
+      "cardSelected": {},
+      // 奖品图片
+      "prizeImage": {},
+      // 奖品名称
+  	"prizeTitle": {},
+      // 修饰层
+  	"modify": [{}]
+  }
+  ```
 
 
 
-- #### <span id="d">AddressModal</span>
+- ##### <span id="d">红包抽奖</span>
+
+  ```javascript
+  GameTheme = {
+  	// 外框
+      "wrap": {},
+      // 封面
+      "cover": {},
+      // 封底
+      "backCover": {},
+      // 封面文字
+      "coverTexts": {},
+      // 封面标题
+      "coverTitle": {},
+      // 封面次标题
+      "coverSubTitle": {},
+      // 游戏结果
+      "gameResult": {},
+      // 获奖名字
+      "gameResultPrizename": {},
+      // 获奖信息
+      "gameResultAwardMsg": {},
+      // 奖品备注
+      "gameResultMemo": {},
+      // 确定操作按钮
+      "ensureBtn": {},
+      // 开始按钮
+      "startButton": {},
+      // 显示活动信息按钮
+      "showGameInfoButton": {},
+      // 活动信息布局
+      "gameInfoLayout": {},
+      // 活动信息外框
+      "gameInfoWrap": {},
+      // 活动信息奖品单项
+      "gameInfoPrizeItem": {},
+      // 活动信息单项图片
+      "gameInfoPrizeImg": {},
+      // 活动信息奖品名称
+      "gameInfoPrizeName": {},
+      // 修饰层
+      "modify": []
+  }
+  ```
+
+  
+
+- ##### <span id="e">掷色子抽奖</span>
+
+  ```javascript
+  GameTheme = {
+  	"wrap": {},
+      // 显示活动信息按钮
+      "showGameInfoButton": {},
+      // 活动信息布局
+      "gameInfoLayout": {},
+      // 活动信息外框
+      "gameInfoWrap": {},
+      // 活动信息奖品单项
+      "gameInfoPrizeItem": {},
+      // 活动信息单项图片
+      "gameInfoPrizeImg": {},
+      // 活动信息奖品名称
+      "gameInfoPrizeName": {},
+      // 对照标签
+      "gameInfoPrizeTag": {},
+      // 色子
+      "dice": {},
+      // 色子的一个面
+      "side": {},
+      // 色子上的点
+      "dot": {},
+      // 修饰层
+      "modify": []
+  }
+  ```
+
+  
+
+- ##### <span id="f">老虎机</span>
+
+  ```javascript
+  GameTheme = {
+      
+      // 外框
+      "wrap": {},
+      // 开始按钮
+      "startButton": {},
+      // 显示活动信息按钮
+      "showGameInfoButton": {},
+      // 活动信息布局
+      "gameInfoLayout": {},
+      // 活动信息外框
+      "gameInfoWrap": {},
+      // 活动信息奖品单项
+      "gameInfoPrizeItem": {},
+      // 活动信息单项图片
+      "gameInfoPrizeImg": {},
+      // 活动信息奖品名称
+      "gameInfoPrizeName": {},
+      // 游戏单项
+      "gameItem": {},
+      // 游戏奖项标题
+      "gamePrizeName": {},
+      // 游戏奖项图片
+      "gamePrizeImg": {},
+      // 游戏
+      "game": {},
+      // 修饰层
+      "modify": []
+  }
+  ```
+
+  
 
 
-```javascript
-"AddressModalTheme": {
-      "overlay": {
-        遮罩层
-      },
-      "content": {
-        内容
-      },
-      "contentTop": {
-        内容顶部
-      },
-      "contentBottom": {
-        内容底部
-      },
-      "header": {
-        头部
-      },
-      "article": {
-        文本内容
-      },
-      "footer": {
-        脚部
-      },
-      "close": {
-        关闭按钮
-      },
-      "row": {
-        表单行
-      },
-      "label": {
-        表单标签
-      },
-      "input": {
-        输入input
-      },
-      "textarea": {
-        输入textarea
-      },
-      "codeButton": {
-        获取验证码按钮
-      },
-      "codeButtonDisable": {
-        获取验证码按钮禁用状态
-      },
-      "submit": {
-        提交按钮
-      },
-      "regions": 
-        "confirmBtn": {地址选择-确定按钮},
-        "cancelBtn": {地址选择-取消按钮},
-        "overlay": {地址选择-遮罩层},
-        "popularCities": {地址选择-热门城市},
-		"popularCitiesTitle": {地址选择-热门城市-标题},
-		"popularCitiesItem": {地址选择-热门城市-项},
-      }
-    }
-```
 
-
-
-- #### <span id="e">Message</span>
-
-
-```JavaScript
-"MessageTheme": {
-    "wrap": {
-        包裹层
-    },
-    "main": {
-        内容层
-    }
-},
-```
-
-
-
-- #### <span id="f">Loading</span>
-
-
-```javascript
-"LoadingTheme": {
-    "overlay": {
-        遮罩层
-    },
-	"content": {
-		内容区域
-	},
-	"vertices": {
-        节点定义
-        
-		// size可以设置Loading的大小
-		"size": "30%", 
-            
-		// elements用来定义是节点数目与颜色，elements为数字时定义节点数目
-        // elements为数组时，数组的长度定义节点的数目，数组子项为颜色属性时代表每个节点的颜色，用来定制彩色Loading
-		"elements": ["red", "green", "blue", "yellow", "orange"] //
-	}
-}
-```
-
+#### 

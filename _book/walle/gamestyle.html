@@ -404,274 +404,209 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x53EF;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;">&#x53EF;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;</h1>
-<table>
-<thead>
-<tr>
-<th>&#x5E95;&#x5C42;&#x6A21;&#x5757;UI&#x8BA2;&#x5236;</th>
-<th>&#x6E38;&#x620F;&#x6A21;&#x5757;UI&#x8BA2;&#x5236;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#g">AddressPicker &#x5730;&#x5740;&#x9009;&#x62E9;</a><br><a href="#h">Message &#x5F31;&#x63D0;&#x9192;</a><br><a href="#i">Loading &#x52A0;&#x8F7D;</a><br><a href="#j">Modal &#x5F39;&#x7A97;</a></td>
-<td><a href="#a">Game &#x6E38;&#x620F;&#x76AE;&#x80A4;</a><br> <a href="#b">FailedModal &#x5931;&#x8D25;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a> <br><a href="#b">SuccessModal &#x6210;&#x529F;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a><br> <a href="#c">NoticeModal &#x6D88;&#x606F;&#x63D0;&#x9192;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a><br> <a href="#d">AddressModal &#x5730;&#x5740;&#x9009;&#x62E9;&#x5F39;&#x7A97;&#x76AE;&#x80A4;</a> <br><a href="#e">Message &#x5F31;&#x63D0;&#x793A;&#x76AE;&#x80A4;</a> <br><a href="#f">Loading &#x52A0;&#x8F7D;&#x76AE;&#x80A4;</a></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><h4 id="addresspicker"><span id="g">AddressPicker</span></h4>
-</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;style&quot;</span>: {
-    <span class="hljs-string">&quot;confirmBtn&quot;</span>: {
-        &#x786E;&#x5B9A;&#x6309;&#x94AE;
-    },
-    <span class="hljs-string">&quot;cancelBtn&quot;</span>: {
-        &#x53D6;&#x6D88;&#x6309;&#x94AE;
-    },
-    <span class="hljs-string">&quot;overlay&quot;</span>: {
-        &#x906E;&#x7F69;&#x5C42;
-    },
-    <span class="hljs-string">&quot;popularCities&quot;</span>: {
-        &#x70ED;&#x95E8;&#x57CE;&#x5E02;
-    },
-    <span class="hljs-string">&quot;popularCitiesTitle&quot;</span>: {
-        &#x70ED;&#x95E8;&#x57CE;&#x5E02;&#x6807;&#x9898;
-    },
-    <span class="hljs-string">&quot;popularCitiesItem&quot;</span>: {
-        &#x70ED;&#x95E8;&#x57CE;&#x5E02;&#x9879;
-    }
+                                <h1 id="&#x6E38;&#x620F;&#x76AE;&#x80A4;gametheme">&#x6E38;&#x620F;&#x76AE;&#x80A4;GameTheme</h1>
+<p>&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x62BD;&#x5956;&#x6D3B;&#x52A8;&#x76AE;&#x80A4;&#x5305;&#x542B;<strong>&#x6E38;&#x620F;&#x76AE;&#x80A4;</strong>&#x4E0E;<strong><a href="modulesstyle.html">&#x6A21;&#x5757;&#x76AE;&#x80A4;</a></strong>&#x4E24;&#x5757;&#xFF0C;&#x5176;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript">Theme = {
+    <span class="hljs-comment">// GameTheme &#x6E38;&#x620F;&#x76AE;&#x80A4;</span>
+  <span class="hljs-string">&quot;GameTheme&quot;</span>: {},
+    <span class="hljs-comment">// &#x6A21;&#x5757;&#x76AE;&#x80A4;</span>
+  <span class="hljs-string">&quot;FailedModalTheme&quot;</span>: {},
+  <span class="hljs-string">&quot;SuccessModalTheme&quot;</span>: {},
+  <span class="hljs-string">&quot;AddressModalTheme&quot;</span>: {},
+  <span class="hljs-string">&quot;MessageTheme&quot;</span>: {},
+  <span class="hljs-string">&quot;LoadingTheme&quot;</span>: {}
+
 }
 </code></pre>
+<blockquote>
+<p>&#x6240;&#x6709;&#x6982;&#x7387;&#x62BD;&#x5956;&#x6E38;&#x620F;&#x7684;&#x6A21;&#x5757;&#x76AE;&#x80A4;&#x7ED3;&#x6784;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x4F46;&#x6E38;&#x620F;&#x5F62;&#x5F0F;&#x4E0D;&#x4E00;&#x6837;&#x5BFC;&#x81F4;&#x6E38;&#x620F;&#x76AE;&#x80A4;&#x7ED3;&#x6784;&#x4F1A;&#x6709;&#x6240;&#x4E0D;&#x540C;</p>
+</blockquote>
+<h3 id="&#x6E38;&#x620F;&#x76AE;&#x80A4;&#x7ED3;&#x6784;">&#x6E38;&#x620F;&#x76AE;&#x80A4;&#x7ED3;&#x6784;</h3>
+<p>&#x200B;    <a href="#a">&#x5927;&#x8F6C;&#x76D8;&#x62BD;&#x5956;</a> </p>
+<p>&#x200B;    <a href="#b">&#x4E5D;&#x5BAB;&#x683C;&#x62BD;&#x5956;</a> </p>
+<p>&#x200B;    <a href="#c">&#x7FFB;&#x724C;&#x62BD;&#x5956;</a> </p>
+<p>&#x200B;    <a href="#d">&#x7EA2;&#x5305;&#x62BD;&#x5956;</a> </p>
+<p>&#x200B;    <a href="#e">&#x63B7;&#x8272;&#x5B50;&#x62BD;&#x5956;</a></p>
+<p>&#x200B;    <a href="#f">&#x8001;&#x864E;&#x673A;</a></p>
 <ul>
-<li><h4 id="message"><span id="h">Message</span></h4>
-</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;style&quot;</span>: {
-    <span class="hljs-string">&quot;wrap&quot;</span>: {
-        &#x5305;&#x88F9;&#x5C42;
-    },
-    <span class="hljs-string">&quot;main&quot;</span>: {
-        &#x5185;&#x5BB9;&#x5C42;
-    }
-},
-</code></pre>
-<ul>
-<li><h4 id="loading"><span id="i">Loading</span></h4>
-</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;style&quot;</span>: {
-    <span class="hljs-string">&quot;overlay&quot;</span>: {
-        &#x906E;&#x7F69;&#x5C42;
-    },
-    <span class="hljs-string">&quot;content&quot;</span>: {
-        &#x5185;&#x5BB9;&#x533A;&#x57DF;
-    },
-    <span class="hljs-string">&quot;vertices&quot;</span>: {
-        &#x8282;&#x70B9;&#x5B9A;&#x4E49;
-
-        <span class="hljs-comment">// size&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;Loading&#x7684;&#x5927;&#x5C0F;</span>
-        <span class="hljs-string">&quot;size&quot;</span>: <span class="hljs-string">&quot;30%&quot;</span>, 
-
-        <span class="hljs-comment">// elements&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x662F;&#x8282;&#x70B9;&#x6570;&#x76EE;&#x4E0E;&#x989C;&#x8272;&#xFF0C;elements&#x4E3A;&#x6570;&#x5B57;&#x65F6;&#x5B9A;&#x4E49;&#x8282;&#x70B9;&#x6570;&#x76EE;</span>
-        <span class="hljs-comment">// elements&#x4E3A;&#x6570;&#x7EC4;&#x65F6;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x5B9A;&#x4E49;&#x8282;&#x70B9;&#x7684;&#x6570;&#x76EE;&#xFF0C;&#x6570;&#x7EC4;&#x5B50;&#x9879;&#x4E3A;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x65F6;&#x4EE3;&#x8868;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x7528;&#x6765;&#x5B9A;&#x5236;&#x5F69;&#x8272;Loading</span>
-        <span class="hljs-string">&quot;elements&quot;</span>: [<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;green&quot;</span>, <span class="hljs-string">&quot;blue&quot;</span>, <span class="hljs-string">&quot;yellow&quot;</span>, <span class="hljs-string">&quot;orange&quot;</span>] <span class="hljs-comment">//</span>
-    }
+<li><h5 id="&#x5927;&#x8F6C;&#x76D8;&#x62BD;&#x5956;"><span id="a">&#x5927;&#x8F6C;&#x76D8;&#x62BD;&#x5956;</span></h5>
+<pre><code class="lang-javascript">GameTheme = {
+    <span class="hljs-comment">// &#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;wrap&quot;</span>: {<span class="hljs-string">&quot;zIndex&quot;</span>: <span class="hljs-number">10</span> }, 
+    <span class="hljs-comment">// &#x6E38;&#x620F;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;gameImg&quot;</span>: {},
+    <span class="hljs-comment">// &#x5956;&#x54C1;&#x522B;&#x540D;</span>
+    <span class="hljs-string">&quot;prizeAlias&quot;</span>: {},
+    <span class="hljs-comment">// &#x6307;&#x9488;</span>
+    <span class="hljs-string">&quot;needle&quot;</span>: {},
+    <span class="hljs-comment">// &#x62BD;&#x5956;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;lotteryButton&quot;</span>: {},
+    <span class="hljs-comment">// &#x8F6C;&#x76D8;</span>
+    <span class="hljs-string">&quot;wheel&quot;</span>: {},
+    <span class="hljs-comment">// &#x8F6C;&#x76D8;&#x5206;&#x5272;&#x7EBF;</span>
+    <span class="hljs-string">&quot;divide&quot;</span>: {},
+    <span class="hljs-comment">// &#x4FEE;&#x9970;&#x5C42;</span>
+    <span class="hljs-string">&quot;modify&quot;</span>: [{<span class="hljs-string">&quot;top&quot;</span>: <span class="hljs-string">&quot;-2.56em&quot;</span>},{...}]
 }
 </code></pre>
-<ul>
-<li><h4 id="modal"><span id="j">Modal</span></h4>
 </li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;style&quot;</span>: {
-    <span class="hljs-string">&quot;overlay&quot;</span>: {&#x906E;&#x7F69;&#x5C42;}, 
-    <span class="hljs-string">&quot;content&quot;</span>: {&#x5185;&#x5BB9;&#x533A;&#x57DF;}, 
-    <span class="hljs-string">&quot;close&quot;</span>: {&#x5173;&#x95ED;&#x6309;&#x94AE;}, 
-    <span class="hljs-string">&quot;header&quot;</span>: {&#x5934;&#x90E8;}, 
-    <span class="hljs-string">&quot;article&quot;</span>: {&#x6587;&#x672C;&#x5185;&#x5BB9;}, 
-    <span class="hljs-string">&quot;footer&quot;</span>: {&#x811A;&#x90E8;},
-    <span class="hljs-string">&quot;modify&quot;</span>: [{
-        &#x4FEE;&#x9970;&#x5C42; 
-    }]
+<ul>
+<li><h5 id="&#x4E5D;&#x5BAB;&#x683C;&#x62BD;&#x5956;"><span id="b">&#x4E5D;&#x5BAB;&#x683C;&#x62BD;&#x5956;</span></h5>
+<pre><code class="lang-javascript">GameTheme = {
+    <span class="hljs-comment">// &#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;wrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x6E38;&#x620F;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;gameImg&quot;</span>: {},
+    <span class="hljs-comment">// &#x5956;&#x54C1;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;prize&quot;</span>: {},
+    <span class="hljs-comment">// &#x6FC0;&#x6D3B;&#x6216;&#x8005;&#x88AB;&#x9009;&#x4E2D;</span>
+    <span class="hljs-string">&quot;activated&quot;</span>: {},
+    <span class="hljs-comment">// &#x5956;&#x54C1;&#x522B;&#x540D;</span>
+    <span class="hljs-string">&quot;prizeAlias&quot;</span>: {},
+    <span class="hljs-comment">// &#x6307;&#x9488;</span>
+    <span class="hljs-string">&quot;needle&quot;</span>: {},
+    <span class="hljs-comment">// &#x62BD;&#x5956;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;lotteryButton&quot;</span>: {},
+    <span class="hljs-comment">// &#x4FEE;&#x9970;&#x5C42;</span>
+    <span class="hljs-string">&quot;modify&quot;</span>: []
 }
 </code></pre>
-<ul>
-<li><h4 id="failedmodal&#x3001;successmodal"><span id="b">FailedModal&#x3001;SuccessModal</span></h4>
 </li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;FailedModalTheme&quot;</span>: {
-      <span class="hljs-string">&quot;overlay&quot;</span>: {
-        &#x906E;&#x7F69;&#x5C42;
-      },
-      <span class="hljs-string">&quot;modalTitle&quot;</span>: {
-        &#x6807;&#x9898;
-      },
-      <span class="hljs-string">&quot;content&quot;</span>: {
-        &#x5185;&#x5BB9;
-      },
-      <span class="hljs-string">&quot;contentTop&quot;</span>: {
-        &#x5185;&#x5BB9;&#x9876;&#x90E8;
-      },
-      <span class="hljs-string">&quot;contentBottom&quot;</span>: {
-        &#x5185;&#x5BB9;&#x5E95;&#x90E8;
-      },
-      <span class="hljs-string">&quot;close&quot;</span>: {
-        &#x5173;&#x95ED;&#x6309;&#x94AE;
-      },
-      <span class="hljs-string">&quot;submit&quot;</span>: {
-        &#x63D0;&#x4EA4;&#x6309;&#x94AE;
-      },
-      <span class="hljs-string">&quot;article&quot;</span>: {
-        &#x6587;&#x672C;&#x5185;&#x5BB9;
-      },
-      <span class="hljs-string">&quot;prizeAlias&quot;</span>: {
-        &#x5956;&#x54C1;&#x522B;&#x540D;    
-      },
-      <span class="hljs-string">&quot;prizeName&quot;</span>: {
-        &#x5956;&#x54C1;&#x540D;&#x79F0;
-      },
-      <span class="hljs-string">&quot;prizeImg&quot;</span>: {
-        &#x5956;&#x54C1;&#x56FE;&#x7247;
-      },
-      <span class="hljs-string">&quot;memo&quot;</span>: {
-        &#x5956;&#x54C1;&#x5907;&#x6CE8;
-      },
-      <span class="hljs-string">&quot;modify&quot;</span>: [{
-        &#x4FEE;&#x9970;&#x5C42; 
-      }]
-    },
-</code></pre>
 <ul>
-<li><h4 id="noticemodal"><span id="c">NoticeModal</span></h4>
-</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;NoticeModalTheme&quot;</span>: {
-      <span class="hljs-string">&quot;overlay&quot;</span>: {
-        &#x906E;&#x7F69;&#x5C42;
-      },
-      <span class="hljs-string">&quot;content&quot;</span>: {
-        &#x5185;&#x5BB9;
-      },
-      <span class="hljs-string">&quot;contentTop&quot;</span>: {
-        &#x5185;&#x5BB9;&#x9876;&#x90E8;
-      },
-      <span class="hljs-string">&quot;contentBottom&quot;</span>: {
-        &#x5185;&#x5BB9;&#x5E95;&#x90E8;
-      },
-      <span class="hljs-string">&quot;close&quot;</span>: {
-        &#x5173;&#x95ED;&#x6309;&#x94AE;
-      },
-      <span class="hljs-string">&quot;submit&quot;</span>: {
-        &#x63D0;&#x4EA4;&#x6309;&#x94AE;
-      },
-      <span class="hljs-string">&quot;article&quot;</span>: {
-        &#x6587;&#x672C;&#x5185;&#x5BB9;
-      },
-      <span class="hljs-string">&quot;modalTitle&quot;</span>: {
-        &#x6A21;&#x5757;&#x6807;&#x9898;
-      },
-      <span class="hljs-string">&quot;modify&quot;</span>: [{
-        &#x4FEE;&#x9970;&#x5C42; 
-      }]
-    }
-</code></pre>
-<ul>
-<li><h4 id="addressmodal"><span id="d">AddressModal</span></h4>
-</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;AddressModalTheme&quot;</span>: {
-      <span class="hljs-string">&quot;overlay&quot;</span>: {
-        &#x906E;&#x7F69;&#x5C42;
-      },
-      <span class="hljs-string">&quot;content&quot;</span>: {
-        &#x5185;&#x5BB9;
-      },
-      <span class="hljs-string">&quot;contentTop&quot;</span>: {
-        &#x5185;&#x5BB9;&#x9876;&#x90E8;
-      },
-      <span class="hljs-string">&quot;contentBottom&quot;</span>: {
-        &#x5185;&#x5BB9;&#x5E95;&#x90E8;
-      },
-      <span class="hljs-string">&quot;header&quot;</span>: {
-        &#x5934;&#x90E8;
-      },
-      <span class="hljs-string">&quot;article&quot;</span>: {
-        &#x6587;&#x672C;&#x5185;&#x5BB9;
-      },
-      <span class="hljs-string">&quot;footer&quot;</span>: {
-        &#x811A;&#x90E8;
-      },
-      <span class="hljs-string">&quot;close&quot;</span>: {
-        &#x5173;&#x95ED;&#x6309;&#x94AE;
-      },
-      <span class="hljs-string">&quot;row&quot;</span>: {
-        &#x8868;&#x5355;&#x884C;
-      },
-      <span class="hljs-string">&quot;label&quot;</span>: {
-        &#x8868;&#x5355;&#x6807;&#x7B7E;
-      },
-      <span class="hljs-string">&quot;input&quot;</span>: {
-        &#x8F93;&#x5165;input
-      },
-      <span class="hljs-string">&quot;textarea&quot;</span>: {
-        &#x8F93;&#x5165;textarea
-      },
-      <span class="hljs-string">&quot;codeButton&quot;</span>: {
-        &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x6309;&#x94AE;
-      },
-      <span class="hljs-string">&quot;codeButtonDisable&quot;</span>: {
-        &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x6309;&#x94AE;&#x7981;&#x7528;&#x72B6;&#x6001;
-      },
-      <span class="hljs-string">&quot;submit&quot;</span>: {
-        &#x63D0;&#x4EA4;&#x6309;&#x94AE;
-      },
-      <span class="hljs-string">&quot;regions&quot;</span>: 
-        <span class="hljs-string">&quot;confirmBtn&quot;</span>: {&#x5730;&#x5740;&#x9009;&#x62E9;-&#x786E;&#x5B9A;&#x6309;&#x94AE;},
-        <span class="hljs-string">&quot;cancelBtn&quot;</span>: {&#x5730;&#x5740;&#x9009;&#x62E9;-&#x53D6;&#x6D88;&#x6309;&#x94AE;},
-        <span class="hljs-string">&quot;overlay&quot;</span>: {&#x5730;&#x5740;&#x9009;&#x62E9;-&#x906E;&#x7F69;&#x5C42;},
-        <span class="hljs-string">&quot;popularCities&quot;</span>: {&#x5730;&#x5740;&#x9009;&#x62E9;-&#x70ED;&#x95E8;&#x57CE;&#x5E02;},
-        <span class="hljs-string">&quot;popularCitiesTitle&quot;</span>: {&#x5730;&#x5740;&#x9009;&#x62E9;-&#x70ED;&#x95E8;&#x57CE;&#x5E02;-&#x6807;&#x9898;},
-        <span class="hljs-string">&quot;popularCitiesItem&quot;</span>: {&#x5730;&#x5740;&#x9009;&#x62E9;-&#x70ED;&#x95E8;&#x57CE;&#x5E02;-&#x9879;},
-      }
-    }
-</code></pre>
-<ul>
-<li><h4 id="message"><span id="e">Message</span></h4>
-</li>
-</ul>
-<pre><code class="lang-JavaScript"><span class="hljs-string">&quot;MessageTheme&quot;</span>: {
-    <span class="hljs-string">&quot;wrap&quot;</span>: {
-        &#x5305;&#x88F9;&#x5C42;
-    },
-    <span class="hljs-string">&quot;main&quot;</span>: {
-        &#x5185;&#x5BB9;&#x5C42;
-    }
-},
-</code></pre>
-<ul>
-<li><h4 id="loading"><span id="f">Loading</span></h4>
-</li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;LoadingTheme&quot;</span>: {
-    <span class="hljs-string">&quot;overlay&quot;</span>: {
-        &#x906E;&#x7F69;&#x5C42;
-    },
-    <span class="hljs-string">&quot;content&quot;</span>: {
-        &#x5185;&#x5BB9;&#x533A;&#x57DF;
-    },
-    <span class="hljs-string">&quot;vertices&quot;</span>: {
-        &#x8282;&#x70B9;&#x5B9A;&#x4E49;
-
-        <span class="hljs-comment">// size&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;Loading&#x7684;&#x5927;&#x5C0F;</span>
-        <span class="hljs-string">&quot;size&quot;</span>: <span class="hljs-string">&quot;30%&quot;</span>, 
-
-        <span class="hljs-comment">// elements&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x662F;&#x8282;&#x70B9;&#x6570;&#x76EE;&#x4E0E;&#x989C;&#x8272;&#xFF0C;elements&#x4E3A;&#x6570;&#x5B57;&#x65F6;&#x5B9A;&#x4E49;&#x8282;&#x70B9;&#x6570;&#x76EE;</span>
-        <span class="hljs-comment">// elements&#x4E3A;&#x6570;&#x7EC4;&#x65F6;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x5B9A;&#x4E49;&#x8282;&#x70B9;&#x7684;&#x6570;&#x76EE;&#xFF0C;&#x6570;&#x7EC4;&#x5B50;&#x9879;&#x4E3A;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x65F6;&#x4EE3;&#x8868;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x7528;&#x6765;&#x5B9A;&#x5236;&#x5F69;&#x8272;Loading</span>
-        <span class="hljs-string">&quot;elements&quot;</span>: [<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;green&quot;</span>, <span class="hljs-string">&quot;blue&quot;</span>, <span class="hljs-string">&quot;yellow&quot;</span>, <span class="hljs-string">&quot;orange&quot;</span>] <span class="hljs-comment">//</span>
-    }
+<li><h5 id="&#x7FFB;&#x724C;&#x62BD;&#x5956;"><span id="c">&#x7FFB;&#x724C;&#x62BD;&#x5956;</span></h5>
+<pre><code class="lang-javascript">GameTheme = {
+    <span class="hljs-comment">// &#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;wrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x5361;&#x724C;&#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;cardWrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x5361;&#x724C;&#x5185;&#x5BB9;</span>
+    <span class="hljs-string">&quot;cardInside&quot;</span>: {},
+    <span class="hljs-comment">// &#x5361;&#x724C;&#x5C01;&#x9762;</span>
+    <span class="hljs-string">&quot;cardCover&quot;</span>: {},
+    <span class="hljs-comment">// &#x5361;&#x724C;&#x5185;&#x5BB9;&#x88AB;&#x9009;&#x4E2D;</span>
+    <span class="hljs-string">&quot;cardSelected&quot;</span>: {},
+    <span class="hljs-comment">// &#x5956;&#x54C1;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;prizeImage&quot;</span>: {},
+    <span class="hljs-comment">// &#x5956;&#x54C1;&#x540D;&#x79F0;</span>
+    <span class="hljs-string">&quot;prizeTitle&quot;</span>: {},
+    <span class="hljs-comment">// &#x4FEE;&#x9970;&#x5C42;</span>
+    <span class="hljs-string">&quot;modify&quot;</span>: [{}]
 }
 </code></pre>
+</li>
+</ul>
+<ul>
+<li><h5 id="&#x7EA2;&#x5305;&#x62BD;&#x5956;"><span id="d">&#x7EA2;&#x5305;&#x62BD;&#x5956;</span></h5>
+<pre><code class="lang-javascript">GameTheme = {
+    <span class="hljs-comment">// &#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;wrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x5C01;&#x9762;</span>
+    <span class="hljs-string">&quot;cover&quot;</span>: {},
+    <span class="hljs-comment">// &#x5C01;&#x5E95;</span>
+    <span class="hljs-string">&quot;backCover&quot;</span>: {},
+    <span class="hljs-comment">// &#x5C01;&#x9762;&#x6587;&#x5B57;</span>
+    <span class="hljs-string">&quot;coverTexts&quot;</span>: {},
+    <span class="hljs-comment">// &#x5C01;&#x9762;&#x6807;&#x9898;</span>
+    <span class="hljs-string">&quot;coverTitle&quot;</span>: {},
+    <span class="hljs-comment">// &#x5C01;&#x9762;&#x6B21;&#x6807;&#x9898;</span>
+    <span class="hljs-string">&quot;coverSubTitle&quot;</span>: {},
+    <span class="hljs-comment">// &#x6E38;&#x620F;&#x7ED3;&#x679C;</span>
+    <span class="hljs-string">&quot;gameResult&quot;</span>: {},
+    <span class="hljs-comment">// &#x83B7;&#x5956;&#x540D;&#x5B57;</span>
+    <span class="hljs-string">&quot;gameResultPrizename&quot;</span>: {},
+    <span class="hljs-comment">// &#x83B7;&#x5956;&#x4FE1;&#x606F;</span>
+    <span class="hljs-string">&quot;gameResultAwardMsg&quot;</span>: {},
+    <span class="hljs-comment">// &#x5956;&#x54C1;&#x5907;&#x6CE8;</span>
+    <span class="hljs-string">&quot;gameResultMemo&quot;</span>: {},
+    <span class="hljs-comment">// &#x786E;&#x5B9A;&#x64CD;&#x4F5C;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;ensureBtn&quot;</span>: {},
+    <span class="hljs-comment">// &#x5F00;&#x59CB;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;startButton&quot;</span>: {},
+    <span class="hljs-comment">// &#x663E;&#x793A;&#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;showGameInfoButton&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5E03;&#x5C40;</span>
+    <span class="hljs-string">&quot;gameInfoLayout&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;gameInfoWrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5956;&#x54C1;&#x5355;&#x9879;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeItem&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5355;&#x9879;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeImg&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5956;&#x54C1;&#x540D;&#x79F0;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeName&quot;</span>: {},
+    <span class="hljs-comment">// &#x4FEE;&#x9970;&#x5C42;</span>
+    <span class="hljs-string">&quot;modify&quot;</span>: []
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><h5 id="&#x63B7;&#x8272;&#x5B50;&#x62BD;&#x5956;"><span id="e">&#x63B7;&#x8272;&#x5B50;&#x62BD;&#x5956;</span></h5>
+<pre><code class="lang-javascript">GameTheme = {
+    <span class="hljs-string">&quot;wrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x663E;&#x793A;&#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;showGameInfoButton&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5E03;&#x5C40;</span>
+    <span class="hljs-string">&quot;gameInfoLayout&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;gameInfoWrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5956;&#x54C1;&#x5355;&#x9879;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeItem&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5355;&#x9879;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeImg&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5956;&#x54C1;&#x540D;&#x79F0;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeName&quot;</span>: {},
+    <span class="hljs-comment">// &#x5BF9;&#x7167;&#x6807;&#x7B7E;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeTag&quot;</span>: {},
+    <span class="hljs-comment">// &#x8272;&#x5B50;</span>
+    <span class="hljs-string">&quot;dice&quot;</span>: {},
+    <span class="hljs-comment">// &#x8272;&#x5B50;&#x7684;&#x4E00;&#x4E2A;&#x9762;</span>
+    <span class="hljs-string">&quot;side&quot;</span>: {},
+    <span class="hljs-comment">// &#x8272;&#x5B50;&#x4E0A;&#x7684;&#x70B9;</span>
+    <span class="hljs-string">&quot;dot&quot;</span>: {},
+    <span class="hljs-comment">// &#x4FEE;&#x9970;&#x5C42;</span>
+    <span class="hljs-string">&quot;modify&quot;</span>: []
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><h5 id="&#x8001;&#x864E;&#x673A;"><span id="f">&#x8001;&#x864E;&#x673A;</span></h5>
+<pre><code class="lang-javascript">GameTheme = {
+
+    <span class="hljs-comment">// &#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;wrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x5F00;&#x59CB;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;startButton&quot;</span>: {},
+    <span class="hljs-comment">// &#x663E;&#x793A;&#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x6309;&#x94AE;</span>
+    <span class="hljs-string">&quot;showGameInfoButton&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5E03;&#x5C40;</span>
+    <span class="hljs-string">&quot;gameInfoLayout&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5916;&#x6846;</span>
+    <span class="hljs-string">&quot;gameInfoWrap&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5956;&#x54C1;&#x5355;&#x9879;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeItem&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5355;&#x9879;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeImg&quot;</span>: {},
+    <span class="hljs-comment">// &#x6D3B;&#x52A8;&#x4FE1;&#x606F;&#x5956;&#x54C1;&#x540D;&#x79F0;</span>
+    <span class="hljs-string">&quot;gameInfoPrizeName&quot;</span>: {},
+    <span class="hljs-comment">// &#x6E38;&#x620F;&#x5355;&#x9879;</span>
+    <span class="hljs-string">&quot;gameItem&quot;</span>: {},
+    <span class="hljs-comment">// &#x6E38;&#x620F;&#x5956;&#x9879;&#x6807;&#x9898;</span>
+    <span class="hljs-string">&quot;gamePrizeName&quot;</span>: {},
+    <span class="hljs-comment">// &#x6E38;&#x620F;&#x5956;&#x9879;&#x56FE;&#x7247;</span>
+    <span class="hljs-string">&quot;gamePrizeImg&quot;</span>: {},
+    <span class="hljs-comment">// &#x6E38;&#x620F;</span>
+    <span class="hljs-string">&quot;game&quot;</span>: {},
+    <span class="hljs-comment">// &#x4FEE;&#x9970;&#x5C42;</span>
+    <span class="hljs-string">&quot;modify&quot;</span>: []
+}
+</code></pre>
+</li>
+</ul>
+<h4 id=""> </h4>
 
                                 
                                 </section>
@@ -715,7 +650,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GameStyle-游戏皮肤定义","level":"1.1.2.3","depth":3,"next":{"title":"ModulesStyle-功能模块皮肤定义","level":"1.1.2.3.1","depth":4,"path":"walle/modulesstyle.md","ref":"walle/modulesstyle.md","articles":[]},"previous":{"title":"工具包","level":"1.1.2.2.3","depth":4,"path":"walle/helper.md","ref":"walle/helper.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"walle/gamestyle.md","mtime":"2019-10-21T06:51:02.934Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-21T06:44:29.992Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GameStyle-游戏皮肤定义","level":"1.1.2.3","depth":3,"next":{"title":"ModulesStyle-功能模块皮肤定义","level":"1.1.2.3.1","depth":4,"path":"walle/modulesstyle.md","ref":"walle/modulesstyle.md","articles":[]},"previous":{"title":"工具包","level":"1.1.2.2.3","depth":4,"path":"walle/helper.md","ref":"walle/helper.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"walle/gamestyle.md","mtime":"2019-10-21T08:19:33.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-21T08:20:36.663Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
