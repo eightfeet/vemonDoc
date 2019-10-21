@@ -1,4 +1,4 @@
-## lottery
+## Game
 
 抽奖 
 [demo](https://by-healthfed.github.io/venom/dist/demo/index.html)
@@ -48,57 +48,3 @@ prizes = [{
  ```
 
 
-
-#### case
-
-```javascript
-import { Game } from '@byhealth/lottery/lib/roulette'; // roulette 大转盘， boxroulette 九宫格，flipcard 翻牌，dice 掷骰子，slotmachine 老虎机
-
-const LotteryGame = new Game({
-          targetId: "target",
-          parentId: "parentId",
-          playerPhone: "13635219421",
-          cardIdRequest: 3, 
-          style: window.themedata1,
-          start: () => new Promise((resolve) => {
-                window.LotteryGame1.Loading.show();
-                window.setTimeout(() => {
-                	window.LotteryGame1.Loading.hide();
-                	resolve(prizes1[Math.floor(Math.random() * rand)]);
-                }, 1000);
-            }),
-          saveAddress: data => new Promise((resolve) => {
-                window.LotteryGame1.Loading.show();
-                window.setTimeout(() => {
-                    console.log('地址信息', data);
-                	window.LotteryGame1.Loading.hide();
-                	resolve();
-                }, 3000);
-            }),
-          receiverInfo: {
-              idCard: "430522201008124611",
-              receiverPhone: "13622841234",
-              address: "address"
-          },
-          checkVerificationCode: data => new Promise((resolve) => {
-                window.LotteryGame1.Loading.show();
-                window.setTimeout(() => {
-                    console.log('手机验证码', data);
-                	window.LotteryGame1.Loading.hide();
-                	resolve();
-                }, 3000);
-            }), // 检查手机验证码
-          prizes: {
-			...
-          },
-          emBase: 10,
-          onCancel: () => console.log('关闭中奖结果'),
-          onEnsure: function(prize){ console.log('确定中奖结果1！', prize); },
-          loading: {
-            size: 20,
-            length: 5,
-            cycleTime: 1
-          }
-    });
-    
-```

@@ -23,7 +23,7 @@ npm i @byhealth/walle -S
 
 ### 游戏模块 
 
-[demo](<./dist>)
+[demo](https://by-healthfed.github.io/venom-walle/dist/)
 
 
 
