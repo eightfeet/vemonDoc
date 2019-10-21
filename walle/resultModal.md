@@ -1,4 +1,4 @@
-## ResultModal
+# ResultModal
 
 承接抽奖结果弹窗，关于抽奖模块的中奖、未中奖结果都由结果页呈现
 

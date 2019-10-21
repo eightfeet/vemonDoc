@@ -1,4 +1,4 @@
-## Walle
+# Walle
 
 walle瓦力，是抽奖游戏模块化的大管家，它始于抽奖但不止于抽奖，可应用到其他项目。
 
@@ -57,35 +57,33 @@ import {Loading, Modal, Message, AddressPicker} from '@byhealth/walle';
 
 
 
-
-
-工具包
-
-
-
 ### 工具包
 
 ```javascript
 {
+    // 表单验证
 	validate: {...}
+    // HTML创建dom、移除dom、创建行内样式
     htmlFactory: {
 		createDom, 
 		removeDom,
-		combineDomByClass,
 		inlineStyle
 	},
+    // 通用工具
 	tools: {
 		isPC,
-		isObject,
+		isObject, 
 		countDown,
-		dormancyFor,
+		dormancyFor, // Promise延时
 		fixpx,
 		setEmBase
 	},
+    // 省市区格式化
 	regionsDataFormat: {
 		formatWheelsData,
 		getPositionByDefaultValue
 	},
+    //  js监听css动画
 	webAnimation: {
 		onceTransitionEnd,
 		onceAnimationEnd

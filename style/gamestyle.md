@@ -1,18 +1,15 @@
-## 可定义样式
+# 可定义样式
 
 
 
 | 底层模块UI订制                                               | 游戏模块UI订制包含以下属性                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [AddressPicker 地址选择](<#g>)<br />[Message 弱提醒](<#h>)<br />[Loading 加载](<#i>)<br />[Modal 弹窗](<#j>) | [GameTheme 游戏皮肤](<#a>)<br /> [FailedModalTheme 失败弹窗皮肤](<#b>) <br />[SuccessModalTheme 成功弹窗皮肤](<#b>)<br /> [NoticeModalTheme 消息提醒弹窗皮肤](<#c>)<br /> [AddressModalTheme 地址选择弹窗皮肤](<#d>) <br />[MessageTheme 弱提示皮肤](<#e>) <br />[LoadingTheme Loading皮肤](<#f>) |
+| [AddressPicker 地址选择](<#g>)<br />[Message 弱提醒](<#h>)<br />[Loading 加载](<#i>)<br />[Modal 弹窗](<#j>) | [Game 游戏皮肤](<#a>)<br /> [FailedModal 失败弹窗皮肤](<#b>) <br />[SuccessModal 成功弹窗皮肤](<#b>)<br /> [NoticeModal 消息提醒弹窗皮肤](<#c>)<br /> [AddressModal 地址选择弹窗皮肤](<#d>) <br />[Message 弱提示皮肤](<#e>) <br />[Loading 加载皮肤](<#f>) |
 
 
 
+- #### <span id="g">AddressPicker</span>
 
-
-AddressPicker
-
-#### <span id="g">AddressPicker</span>
 
 ```javascript
 "style": {
@@ -39,7 +36,8 @@ AddressPicker
 
 
 
-#### <span id="h">Message</span>
+- #### <span id="h">Message</span>
+
 
 ```javascript
 "style": {
@@ -54,7 +52,8 @@ AddressPicker
 
 
 
-#### <span id="i">Loading</span>
+- #### <span id="i">Loading</span>
+
 
 ```javascript
 "style": {
@@ -79,7 +78,8 @@ AddressPicker
 
 
 
-#### <span id="j">Modal</span>
+- #### <span id="j">Modal</span>
+
 
 ```javascript
 "style": {
@@ -99,13 +99,8 @@ AddressPicker
 
 
 
-#### <span id="a">GameTheme</span>
+- #### <span id="b">FailedModal、SuccessModal</span>
 
-根据不同抽奖形式而不同，参考对应抽奖模块的样式定义
-
-
-
-#### <span id="b">FailedModalTheme、SuccessModalTheme</span>
 
 ```javascript
 "FailedModalTheme": {
@@ -153,7 +148,8 @@ AddressPicker
 
 
 
-#### <span id="c">NoticeModalTheme</span>
+- #### <span id="c">NoticeModal</span>
+
 
 ```javascript
 "NoticeModalTheme": {
@@ -189,7 +185,8 @@ AddressPicker
 
 
 
-#### <span id="d">AddressModalTheme</span>
+- #### <span id="d">AddressModal</span>
+
 
 ```javascript
 "AddressModalTheme": {
@@ -251,7 +248,8 @@ AddressPicker
 
 
 
-#### <span id="e">MessageTheme</span>
+- #### <span id="e">Message</span>
+
 
 ```JavaScript
 "MessageTheme": {
@@ -266,7 +264,8 @@ AddressPicker
 
 
 
-#### <span id="f">LoadingTheme</span>
+- #### <span id="f">Loading</span>
+
 
 ```javascript
 "LoadingTheme": {
