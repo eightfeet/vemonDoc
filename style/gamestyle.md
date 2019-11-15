@@ -21,15 +21,6 @@
     },
 	"overlay": {
 		遮罩层
-	},
-	"popularCities": {
-		热门城市
-	},
-	"popularCitiesTitle": {
-        热门城市标题
-	},
-	"popularCitiesItem": {
-        热门城市项
 	}
 }
 ```
