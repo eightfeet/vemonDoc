@@ -76,27 +76,29 @@ const LotteryGame = new Game({
 <div style="width:100%; clear:both">
 	<div style="float: left; width: 33%; text-align:center">
         <a href="https://by-healthfed.github.io/venom/dist/demo/roulette.html"><img src="./../assets/roulette.jpg" style="width:90%; display:block;margin: 0 auto;" /></a>
-        <div style="text-align:center; padding:10px 0">大转盘(roulette)</div>
+        <div style="text-align:center; padding:10px 0">大转盘<br/>(roulette)</div>
     </div>
     <div style="float: left; width: 33%; text-align:center">
         <a href="https://by-healthfed.github.io/venom/dist/demo/boxroulette.html"><img src="./../assets/boxroulette.jpg" style="width:90%; display:block;margin: 0 auto;" /></a>
-        <div style="text-align:center; padding:10px 0">九宫格(boxroulette)</div>
+        <div style="text-align:center; padding:10px 0">九宫格<br/>(boxroulette)</div>
     </div>
     <div style="float: left; width: 33%; text-align:center">
         <a href="https://by-healthfed.github.io/venom/dist/demo/flipcard.html"><img src="./../assets/flipcard.jpg" style="width:90%; display:block;margin: 0 auto;" /></a>
-        <div style="text-align:center; padding:10px 0">翻牌(flipcard)</div>
+        <div style="text-align:center; padding:10px 0">翻牌<br/>(flipcard)</div>
     </div>
+</div>
+<div style="width:100%; clear:both">
     <div style="float: left; width: 33%; text-align:center">
         <a href="https://by-healthfed.github.io/venom/dist/demo/dice.html"><img src="./../assets/dice.jpg" style="width:90%; display:block;margin: 0 auto;" /></a>
-        <div style="text-align:center; padding:10px 0">掷色子(dice)</div>
+        <div style="text-align:center; padding:10px 0">掷色子<br/>(dice)</div>
     </div>
     <div style="float: left; width: 33%; text-align:center">
         <a href="https://by-healthfed.github.io/venom/dist/demo/slotmachine.html"><img src="./../assets/slotmachine.jpg" style="width:90%; display:block;margin: 0 auto;" /></a>
-        <div style="text-align:center; padding:10px 0">老虎机(slotmachine)</div>
+        <div style="text-align:center; padding:10px 0">老虎机<br/>(slotmachine)</div>
     </div>
     <div style="float: left; width: 33%; text-align:center">
         <a href="https://by-healthfed.github.io/venom/dist/demo/redenvelope.html"><img src="./../assets/redenvelope.jpg" style="width:90%; display:block;margin: 0 auto;" /></a>
-        <div style="text-align:center; padding:10px 0">开红包(redenvelope)</div>
+        <div style="text-align:center; padding:10px 0">开红包<br/>(redenvelope)</div>
     </div>
     <div style="float: left;clear:both">&nbsp;</div>
 </div>

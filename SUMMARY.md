@@ -11,10 +11,18 @@
                 * [Msg-提示信息](walle/msg.md)
                 * [NoticeModal-消息弹窗](walle/noticeModal.md)
             * [底层模块]()
-                * [Loading-加载](http://www.eightfeet.cn/Loading/)
-                * [Modal-模态框](http://www.eightfeet.cn/Modal/)
-                * [Message-弱提示](http://www.eightfeet.cn/Message/)
-                * [AddressPicker-地址选择](http://www.eightfeet.cn/AddressPicker/)
+                * [Loading-加载](https://github.com/eightfeet/Loading/blob/master/README.md)
+                * [Modal-模态框](https://github.com/eightfeet/Modal/blob/master/readme.MD)
+                * [Message-弱提示](https://github.com/eightfeet/Message/blob/master/README.md)
+                * [Picker-选择器](https://github.com/eightfeet/Picker/blob/master/readme.MD)
         * [GameStyle-游戏皮肤定义](walle/gamestyle.md)
             * [ModulesStyle-功能模块皮肤定义](walle/modulesstyle.md)
 
+
+- #### 页面加载 [Loading](<>)
+
+- #### 页面弹窗 [Modal](<https://github.com/eightfeet/Modal/blob/master/readme.MD>)
+
+- #### 弱提示 [Message](<https://github.com/eightfeet/Message/blob/master/README.md>)
+
+- #### 选择器 [Picker](<https://github.com/eightfeet/Picker/blob/master/readme.MD/>)

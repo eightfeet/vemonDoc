@@ -47,13 +47,13 @@ import {AddressModal, ResultModal, NoticeModal, Msg } from '@byhealth/walle';
 import {Loading, Modal, Message, AddressPicker} from '@byhealth/walle';
 ```
 
-- #### 页面加载 [Loading](<http://www.eightfeet.cn/Loading/>)
+- #### 页面加载 [Loading](<https://github.com/eightfeet/Loading/blob/master/README.md>)
 
-- #### 页面弹窗 [Modal](<http://www.eightfeet.cn/Modal/>)
+- #### 页面弹窗 [Modal](<https://github.com/eightfeet/Modal/blob/master/readme.MD>)
 
-- #### 弱提示 [Message](<http://www.eightfeet.cn/Message/>)
+- #### 弱提示 [Message](<https://github.com/eightfeet/Message/blob/master/README.md>)
 
-- #### 地址选择 [AddressPicker](<http://www.eightfeet.cn/AddressPicker/>)
+- #### 选择器 [Picker](<https://github.com/eightfeet/Picker/blob/master/readme.MD/>)
 
 
 

@@ -3,7 +3,7 @@
 收货地址弹窗
 
 > extend 底层模块Modal
-> 包含底层模块与工具 （AddressPicker、 Modal、 Message、 validate）
+> 包含底层模块与工具 （Picker、 Modal、 Message、 validate）
 
 #### parame
 
